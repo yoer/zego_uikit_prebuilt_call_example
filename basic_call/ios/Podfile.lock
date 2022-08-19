@@ -1,0 +1,22 @@
+PODS:
+  - ZegoExpressEngine (2.22.0):
+    - ZegoExpressEngine/Video (= 2.22.0)
+  - ZegoExpressEngine/Video (2.22.0)
+  - ZIM (2.3.0)
+
+DEPENDENCIES:
+  - ZegoExpressEngine
+  - ZIM (>= 2.3.0)
+
+SPEC REPOS:
+  trunk:
+    - ZegoExpressEngine
+    - ZIM
+
+SPEC CHECKSUMS:
+  ZegoExpressEngine: d8287ecfe9125b2d0e9c2f370e2a5d283e8f6c3a
+  ZIM: d972fa0039e3a2fca200f443f9942642f06e4a9b
+
+PODFILE CHECKSUM: ce61a9c91d6a5e8073dd4dda68e1cfd60a30d881
+
+COCOAPODS: 1.11.3

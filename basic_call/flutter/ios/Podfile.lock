@@ -1,0 +1,77 @@
+PODS:
+  - audioplayers_darwin (0.0.1):
+    - Flutter
+  - Flutter (1.0.0)
+  - flutter_vibrate (0.0.1):
+    - Flutter
+  - native_device_orientation (0.0.1):
+    - Flutter
+  - path_provider_ios (0.0.1):
+    - Flutter
+  - permission_handler_apple (9.0.4):
+    - Flutter
+  - wakelock (0.0.1):
+    - Flutter
+  - zego_express_engine (2.21.1):
+    - Flutter
+    - ZegoExpressEngine (= 2.21.1)
+  - zego_zim (2.2.3):
+    - Flutter
+    - ZIM (= 2.2.3)
+  - ZegoExpressEngine (2.21.1):
+    - ZegoExpressEngine/Video (= 2.21.1)
+  - ZegoExpressEngine/Video (2.21.1)
+  - ZIM (2.2.3)
+
+DEPENDENCIES:
+  - audioplayers_darwin (from `.symlinks/plugins/audioplayers_darwin/ios`)
+  - Flutter (from `Flutter`)
+  - flutter_vibrate (from `.symlinks/plugins/flutter_vibrate/ios`)
+  - native_device_orientation (from `.symlinks/plugins/native_device_orientation/ios`)
+  - path_provider_ios (from `.symlinks/plugins/path_provider_ios/ios`)
+  - permission_handler_apple (from `.symlinks/plugins/permission_handler_apple/ios`)
+  - wakelock (from `.symlinks/plugins/wakelock/ios`)
+  - zego_express_engine (from `.symlinks/plugins/zego_express_engine/ios`)
+  - zego_zim (from `.symlinks/plugins/zego_zim/ios`)
+
+SPEC REPOS:
+  trunk:
+    - ZegoExpressEngine
+    - ZIM
+
+EXTERNAL SOURCES:
+  audioplayers_darwin:
+    :path: ".symlinks/plugins/audioplayers_darwin/ios"
+  Flutter:
+    :path: Flutter
+  flutter_vibrate:
+    :path: ".symlinks/plugins/flutter_vibrate/ios"
+  native_device_orientation:
+    :path: ".symlinks/plugins/native_device_orientation/ios"
+  path_provider_ios:
+    :path: ".symlinks/plugins/path_provider_ios/ios"
+  permission_handler_apple:
+    :path: ".symlinks/plugins/permission_handler_apple/ios"
+  wakelock:
+    :path: ".symlinks/plugins/wakelock/ios"
+  zego_express_engine:
+    :path: ".symlinks/plugins/zego_express_engine/ios"
+  zego_zim:
+    :path: ".symlinks/plugins/zego_zim/ios"
+
+SPEC CHECKSUMS:
+  audioplayers_darwin: 387322cb364026a1782298c982693b1b6aa9fa1b
+  Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
+  flutter_vibrate: 9f4c2ab57008965f78969472367c329dd77eb801
+  native_device_orientation: 3b4cfc9565a7b879cc4fde282b3e27745e852d0d
+  path_provider_ios: 14f3d2fd28c4fdb42f44e0f751d12861c43cee02
+  permission_handler_apple: 44366e37eaf29454a1e7b1b7d736c2cceaeb17ce
+  wakelock: d0fc7c864128eac40eba1617cb5264d9c940b46f
+  zego_express_engine: f9beb0f413403ce7972107ba4859ed7aaa230066
+  zego_zim: a2095a21851b22ecce6825318536d60e4b136c1f
+  ZegoExpressEngine: 9c2b8ce023840e5e97b91da9fd4897dfa44a3b49
+  ZIM: e8eb75c7230eabd77d7d98f1dd21be81da8e9168
+
+PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+
+COCOAPODS: 1.11.3
