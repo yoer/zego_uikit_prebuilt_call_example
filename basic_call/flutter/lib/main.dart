@@ -1,7 +1,7 @@
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
 
-import 'package:zego_uikit/zego_uikit.dart';
+import 'package:zego_uikit/prebuilts/call.dart';
 
 void main() {
   runApp(const MyApp());

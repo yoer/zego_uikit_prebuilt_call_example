@@ -1,13 +1,9 @@
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
 
-import 'package:zego_uikit/zego_uikit.dart';
-
-import 'navigation_service.dart';
+import 'package:zego_uikit/prebuilts/call.dart';
 
 void main() {
-  NavigationService().init();
-
   runApp(const MyApp());
 }
 
@@ -16,10 +12,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: const HomePage(),
-      navigatorKey: locator<NavigationService>().navigatorKey,
-    );
+    return const MaterialApp(home: HomePage());
   }
 }
 
@@ -32,37 +25,26 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   var localUserID = math.Random().nextInt(10000).toString();
+
   TextEditingController inviteeUserIDTextCtrl = TextEditingController();
 
   @override
-  void initState() {
-    super.initState();
-
-    ZegoUIKitPrebuiltCallInvitationService.instance.init(
-      appID: 355964969,
-      appSecret: '8ab7a8831f337e25e3685ae48c13ad8a',
-      appSign:
-          'd5e65d6c62f272eafdb8a69ed21db1e151365d6fb4a0ab880d11ad2a5f768e15',
+  Widget build(BuildContext context) {
+    return ZegoUIKitPrebuiltCallWithInvitation(
+      appID: yourAppID,
+      appSign: yourAppSign,
+      appSecret: yourAppSecret,
       userID: localUserID,
       userName: "user_$localUserID",
-      configQuery: (ZegoCallInvitationData data) {
+      //  we will ask you for config when we need it, you can customize your app with data
+      requireConfig: (ZegoCallInvitationData data) {
         return ZegoUIKitPrebuiltCallConfig();
       },
-      contextQuery: () {
-        return locator<NavigationService>().navigatorKey.currentContext!;
-      },
+      child: body(context),
     );
   }
 
-  @override
-  void dispose() {
-    super.dispose();
-
-    ZegoUIKitPrebuiltCallInvitationService.instance.uninit();
-  }
-
-  @override
-  Widget build(BuildContext context) {
+  Widget body(BuildContext context) {
     return GestureDetector(
       onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
       child: SafeArea(
